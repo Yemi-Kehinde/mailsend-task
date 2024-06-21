@@ -41,7 +41,7 @@ kind: EmailSenderConfig
 metadata:
   name: emailsender-01.com
 spec:
-  senderEmail: sample@gmail.com
+  senderEmail: yemi1842@gmail.com
   apiTokenSecretRef: mailersend-secret
 
 
