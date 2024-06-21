@@ -63,8 +63,8 @@ func main() {
 	}
 
 	namespace := "default"
-	emailResourceName := "example-email"
-	senderResourceName := "example-sender"
+	emailResourceName := "emailsender-01.com"
+	senderResourceName := "yemi1842@gmail.com"
 
 	emailConfig, err := getEmailConfig(dynamicClient, namespace, emailResourceName)
 	if err != nil {
@@ -93,7 +93,7 @@ func main() {
 	}
 
 	log.Println("Email sent successfully")
-	updateEmailStatus(dynamicClient, namespace, emailResourceName, "Successful", "MessageIDPlaceholder", "")
+	updateEmailStatus(dynamicClient, namespace, emailResourceName, "Successful", "17", "")
 }
 
 func getEmailConfig(dynamicClient dynamic.Interface, namespace, name string) (*Email, error) {
