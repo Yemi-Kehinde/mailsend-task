@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mailerlite-operator
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mailerlite-operator
+  template:
+    metadata:
+      labels:
+        app: mailerlite-operator
+    spec:
+      containers:
+      - name: mailerlite-operator
+        image: yemi10/email-operator
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: "0.8"
+            memory: "256Mi"
+          requests:
+            cpu: "0.8"
+            memory: "256Mi"

@@ -1,0 +1,7 @@
+apiVersion: mailerlite.task.com/v1
+kind: EmailSenderConfig
+metadata:
+  name: emailsender-01.com
+spec:
+  senderEmail: sample@gmail.com
+  apiTokenSecretRef: mailersend-secret

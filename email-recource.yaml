@@ -1,0 +1,9 @@
+apiVersion: mailerlite.task.com/v1
+kind: Email
+metadata:
+  name: email-01
+spec:
+  senderConfigRef: emailsender-01.com
+  recipientEmail: okreceive@gmail.co
+  subject: "hello"
+  body: "hi there"
