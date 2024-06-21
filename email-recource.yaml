@@ -6,4 +6,4 @@ spec:
   senderConfigRef: emailsender-01.com
   recipientEmail: okreceive@gmail.co
   subject: "hello"
-  body: "hi there"
+  body: "Hello this is email body"
